@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="Browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="com.qa.Utility.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Testing (failed)" verbose="0">
+    <parameter name="Url" value="https://www.snapdeal.com/"/>
+    <classes>
+      <class name="com.qa.tests.SnapDeal">
+        <methods>
+          <include name="Register"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.qa.tests.SnapDeal -->
+    </classes>
+  </test> <!-- Testing (failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,5 @@
+com\qa\tests\TestBase.class
+com\qa\Utility\Reporting.class
+com\qa\pages\SnapDealPage.class
+com\qa\Utility\ExcelUtility.class
+com\qa\tests\SnapDeal.class

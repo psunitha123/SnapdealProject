@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ebay search]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Testing(failed)">
+    <parameter name="Url" value="https://www.ebay.com/"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.qa.TestNgCaseStudy.ebay_casestudy2">
+        <methods>
+          <include name="ebaysearch2"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.TestNgCaseStudy.ebay_casestudy2 -->
+      <class name="com.qa.TestNgCaseStudy.Mainclass">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="ebay"/>
+        </methods>
+      </class> <!-- com.qa.TestNgCaseStudy.Mainclass -->
+    </classes>
+  </test> <!-- Testing(failed) -->
+  <test thread-count="5" name="Testing.kkkk(failed)">
+    <parameter name="Url" value="https://www.rediff.com/"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.qa.TestNgCaseStudy.Mainclassrediff3">
+        <methods>
+          <include name="rediff"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.TestNgCaseStudy.Mainclassrediff3 -->
+    </classes>
+  </test> <!-- Testing.kkkk(failed) -->
+</suite> <!-- Failed suite [ebay search] -->
